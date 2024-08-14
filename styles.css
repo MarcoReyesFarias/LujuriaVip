@@ -1,0 +1,201 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+header {
+    background-color: #9c27b0; /* Fondo morado para el encabezado */
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header .search-filter {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+header .search-filter input,
+header .search-filter select {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+header .search-filter button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #9c27b0; /* Texto morado */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header nav a.highlight {
+    background-color: #ffffff; /* Fondo blanco */
+    color: #9c27b0; /* Texto morado */
+    padding: 8px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+main {
+    padding: 20px;
+}
+
+.ad-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.ad-card {
+    border: 2px solid #9c27b0; /* Borde morado */
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.ad-card:hover {
+    transform: translateY(-5px);
+}
+
+.ad-card h2 {
+    color: #4caf50; /* Verde para el nombre del prestador */
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.ad-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.ad-card p {
+    font-size: 18px;
+    color: #333;
+}
+
+.whatsapp-btn {
+    background-color: #4caf50; /* Botón verde para WhatsApp */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #9c27b0; /* Fondo morado para el pie de página */
+    color: #fff;
+}
+
+/* Estilos para el pop-up de advertencia */
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+}
+
+.popup-content h2 {
+    margin: 0;
+    margin-bottom: 20px;
+    color: #9c27b0;
+}
+
+.popup-content button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#accept-btn {
+    background-color: #4caf50;
+    color: #fff;
+}
+
+#decline-btn {
+    background-color: #f44336;
+    color: #fff;
+}
+
+/* Estilos para la imagen de fondo en la página inicial */
+.full-image-bg {
+    background-image: url('C:/Users/marco/OneDrive/Escritorio/Proyecto Lucas/Prototipo4/Imagenes/home.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Asegura que ocupe toda la altura de la pantalla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.filter-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.filter-container h2 {
+    margin-bottom: 20px;
+    color: #9c27b0;
+}
+
+.filter-container select,
+.filter-container button {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.filter-container button {
+    background-color: #9c27b0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}

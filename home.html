@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lujuria VIP - Bienvenida</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+</head>
+<body>
+    <!-- Pop-up de advertencia -->
+    <div id="age-warning" class="popup">
+        <div class="popup-content">
+            <h2>Advertencia</h2>
+            <p>Este sitio es solo para mayores de 18 años. ¿Deseas continuar?</p>
+            <button id="accept-btn">Aceptar</button>
+            <button id="decline-btn">Regresar</button>
+        </div>
+    </div>
+
+    <!-- Contenido de la página inicial -->
+    <div id="home-content">
+        <header>
+            <div class="logo">
+                <h1>Lujuria VIP</h1>
+            </div>
+            <nav>
+                <a href="#" class="highlight">Iniciar Sesión</a>
+                <a href="#" class="highlight">Publicarte</a>
+            </nav>
+        </header>
+
+        <main class="full-image-bg">
+            <div class="filter-container">
+                <h2>Encuentra tu servicio</h2>
+                <!-- Filtro por región -->
+                <select id="region" name="region">
+                    <option value="">Seleccione Región</option>
+                    <option value="arica">Arica y Parinacota</option>
+                    <option value="tarapaca">Tarapacá</option>
+                    <option value="antofagasta">Antofagasta</option>
+                    <option value="atacama">Atacama</option>
+                    <option value="coquimbo">Coquimbo</option>
+                    <option value="valparaiso">Valparaíso</option>
+                    <option value="metropolitana">Región Metropolitana</option>
+                    <option value="ohiggins">O'Higgins</option>
+                    <option value="maule">Maule</option>
+                    <option value="ñuble">Ñuble</option>
+                    <option value="biobio">Biobío</option>
+                    <option value="araucania">La Araucanía</option>
+                    <option value="rios">Los Ríos</option>
+                    <option value="lagos">Los Lagos</option>
+                    <option value="aysen">Aysén</option>
+                    <option value="magallanes">Magallanes</option>
+                </select>
+
+                <!-- Filtro por ciudad -->
+                <select id="city" name="city" style="display: none;">
+                    <option value="">Seleccione Ciudad</option>
+                    <!-- Opciones por región - Regiones están con 'value' coincidente -->
+                    <option value="arica" data-region="arica">Arica</option>
+                    <option value="iquique" data-region="tarapaca">Iquique</option>
+                    <option value="antofagasta" data-region="antofagasta">Antofagasta</option>
+                    <option value="copiapo" data-region="atacama">Copiapó</option>
+                    <option value="la_serena" data-region="coquimbo">La Serena</option>
+                    <option value="valparaiso" data-region="valparaiso">Valparaíso</option>
+                    <option value="santiago" data-region="metropolitana">Santiago</option>
+                    <option value="rancagua" data-region="ohiggins">Rancagua</option>
+                    <option value="talca" data-region="maule">Talca</option>
+                    <option value="chillan" data-region="ñuble">Chillán</option>
+                    <option value="concepcion" data-region="biobio">Concepción</option>
+                    <option value="temuco" data-region="araucania">Temuco</option>
+                    <option value="valdivia" data-region="rios">Valdivia</option>
+                    <option value="puerto_montt" data-region="lagos">Puerto Montt</option>
+                    <option value="coyhaique" data-region="aysen">Coyhaique</option>
+                    <option value="punta_arenas" data-region="magallanes">Punta Arenas</option>
+                </select>
+
+                <!-- Filtro por comuna (Solo para Santiago) -->
+                <select id="comuna" name="comuna" style="display: none;">
+                    <option value="">Seleccione Comuna</option>
+                    <option value="providencia" data-city="santiago">Providencia</option>
+                    <option value="las_condes" data-city="santiago">Las Condes</option>
+                    <option value="la_florida" data-city="santiago">La Florida</option>
+                    <option value="pudahuel" data-city="santiago">Pudahuel</option>
+                    <option value="santiago_centro" data-city="santiago">Santiago Centro</option>
+                    <option value="vitacura" data-city="santiago">Vitacura</option>
+                    <option value="lo_barnechea" data-city="santiago">Lo Barnechea</option>
+                    <option value="maipu" data-city="santiago">Maipú</option>
+                    <option value="la_reina" data-city="santiago">La Reina</option>
+                </select>
+
+                <button id="search-btn">Buscar</button>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

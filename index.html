@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lujuria VIP</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Lujuria VIP</h1>
+        </div>
+        <div class="search-filter">
+            <!-- Filtro por región -->
+            <select id="region" name="region">
+                <option value="">Seleccione Región</option>
+                <option value="arica">Arica y Parinacota</option>
+                <option value="tarapaca">Tarapacá</option>
+                <option value="antofagasta">Antofagasta</option>
+                <option value="atacama">Atacama</option>
+                <option value="coquimbo">Coquimbo</option>
+                <option value="valparaiso">Valparaíso</option>
+                <option value="metropolitana">Región Metropolitana</option>
+                <option value="ohiggins">O'Higgins</option>
+                <option value="maule">Maule</option>
+                <option value="ñuble">Ñuble</option>
+                <option value="biobio">Biobío</option>
+                <option value="araucania">La Araucanía</option>
+                <option value="rios">Los Ríos</option>
+                <option value="lagos">Los Lagos</option>
+                <option value="aysen">Aysén</option>
+                <option value="magallanes">Magallanes</option>
+            </select>
+
+            <!-- Filtro por ciudad -->
+            <select id="city" name="city" style="display: none;">
+                <option value="">Seleccione Ciudad</option>
+                <option value="arica" data-region="arica">Arica</option>
+                <option value="iquique" data-region="tarapaca">Iquique</option>
+                <option value="antofagasta" data-region="antofagasta">Antofagasta</option>
+                <option value="copiapo" data-region="atacama">Copiapó</option>
+                <option value="la_serena" data-region="coquimbo">La Serena</option>
+                <option value="valparaiso" data-region="valparaiso">Valparaíso</option>
+                <option value="santiago" data-region="metropolitana">Santiago</option>
+                <option value="rancagua" data-region="ohiggins">Rancagua</option>
+                <option value="talca" data-region="maule">Talca</option>
+                <option value="chillan" data-region="ñuble">Chillán</option>
+                <option value="concepcion" data-region="biobio">Concepción</option>
+                <option value="temuco" data-region="araucania">Temuco</option>
+                <option value="valdivia" data-region="rios">Valdivia</option>
+                <option value="puerto_montt" data-region="lagos">Puerto Montt</option>
+                <option value="coyhaique" data-region="aysen">Coyhaique</option>
+                <option value="punta_arenas" data-region="magallanes">Punta Arenas</option>
+            </select>
+
+            <!-- Filtro por comuna (Solo para Santiago) -->
+            <select id="comuna" name="comuna" style="display: none;">
+                <option value="">Seleccione Comuna</option>
+                <option value="providencia" data-city="santiago">Providencia</option>
+                <option value="las_condes" data-city="santiago">Las Condes</option>
+                <option value="la_florida" data-city="santiago">La Florida</option>
+                <option value="pudahuel" data-city="santiago">Pudahuel</option>
+                <option value="santiago_centro" data-city="santiago">Santiago Centro</option>
+                <option value="vitacura" data-city="santiago">Vitacura</option>
+                <option value="lo_barnechea" data-city="santiago">Lo Barnechea</option>
+                <option value="maipu" data-city="santiago">Maipú</option>
+                <option value="la_reina" data-city="santiago">La Reina</option>
+            </select>
+
+            <button id="search-btn">🔍</button>
+        </div>
+        <nav>
+            <a href="#" class="highlight">Iniciar Sesión</a>
+            <a href="#" class="highlight">Publica tu anuncio</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="ad-grid">
+            <div class="ad-card">
+                <h2>MaraCriss</h2>
+                <img src="C:\Users\marco\OneDrive\Escritorio\Proyecto Lucas\Imagen\criss.png" alt="Servicio 1">
+                <p>Precio: $5.000</p>
+                <button class="whatsapp-btn">Contactar por WhatsApp</button>
+            </div>
+            <div class="ad-card">
+                <h2>Paponeitor con 2 Tubo motores</h2>
+                <img src="C:\Users\marco\OneDrive\Escritorio\Proyecto Lucas\Imagen\papo.png" alt="Servicio 1">
+                <p>Precio: $30.000</p>
+                <button class="whatsapp-btn">Contactar por WhatsApp</button>
+            </div>
+            <div class="ad-card">
+                <h2>Nombre del Prestador</h2>
+                <img src="servicio1.jpg" alt="Servicio 1">
+                <p>Precio: $50.000</p>
+                <button class="whatsapp-btn">Contactar por WhatsApp</button>
+            </div>
+            <!-- Más tarjetas de anuncios -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Lujuria VIP. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
